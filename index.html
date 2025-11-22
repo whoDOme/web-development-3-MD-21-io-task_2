@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameRent - Прокат настольных игр</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">GameRent</div>
+                <ul class="nav-menu">
+                    <li><a href="#how-it-works">Как работает</a></li>
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#pricing">Тарифы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Прокат настольных игр</h1>
+                <p>Более 200 игр для любой компании. Доставка по городу за 2 часа!</p>
+                <button class="cta-button" id="openModal">Выбрать игру</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>Как работает прокат</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-icon">🎲</div>
+                    <h3>Выберите игру</h3>
+                    <p>В нашем каталоге более 200 игр на любой вкус</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">🚗</div>
+                    <h3>Бесплатная доставка</h3>
+                    <p>Привезем игру в удобное время и место</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">🎯</div>
+                    <h3>Играйте</h3>
+                    <p>Наслаждайтесь игрой от 1 до 7 дней</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">📞</div>
+                    <h3>Верните</h3>
+                    <p>Мы заберем игру и привезем новую</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2>Популярные игры</h2>
+            <div class="games-grid">
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Наши тарифы</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Базовый</h3>
+                    <div class="price">300₽</div>
+                    <p>за 1 игру на 3 дня</p>
+                    <ul>
+                        <li>1 игра на выбор</li>
+                        <li>Срок аренды: 3 дня</li>
+                        <li>Бесплатная доставка</li>
+                        <li>Помощь в выборе</li>
+                    </ul>
+                    <button class="cta-button">Выбрать</button>
+                </div>
+
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Популярный</div>
+                    <h3>Стандарт</h3>
+                    <div class="price">500₽</div>
+                    <p>за 1 игру на 7 дней</p>
+                    <ul>
+                        <li>1 игра на выбор</li>
+                        <li>Срок аренды: 7 дней</li>
+                        <li>Бесплатная доставка</li>
+                        <li>Помощь в выборе</li>
+                        <li>Видео-инструкция</li>
+                    </ul>
+                    <button class="cta-button">Выбрать</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Премиум</h3>
+                    <div class="price">800₽</div>
+                    <p>за 2 игры на 7 дней</p>
+                    <ul>
+                        <li>2 игры на выбор</li>
+                        <li>Срок аренды: 7 дней</li>
+                        <li>Бесплатная доставка</li>
+                        <li>Персональный консультант</li>
+                        <li>Видео-инструкция</li>
+                        <li>Скидка 10% на след. заказ</li>
+                    </ul>
+                    <button class="cta-button">Выбрать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Забронировать игру</h2>
+            <form id="rental-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Телефон" required>
+                <select required>
+                    <option value="">Выберите игру</option>
+                    <option value="catan">Колонизаторы - 500₽/неделя</option>
+                    <option value="codenames">Кодовые имена - 300₽/неделя</option>
+                    <option value="dixit">Диксит - 400₽/неделя</option>
+                </select>
+                <select required>
+                    <option value="">Выберите тариф</option>
+                    <option value="basic">Базовый (3 дня) - 300₽</option>
+                    <option value="standard">Стандартный (7 дней) - 500₽</option>
+                    <option value="premium">Премиум (2 игры, 7 дней) - 800₽</option>
+                </select>
+                <button type="submit">Забронировать</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
